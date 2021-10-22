@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tutor__c</fullName>
+    <externalId>false</externalId>
+    <label>Tutor</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Agustina Wagner</fullName>
+                <default>false</default>
+                <label>Agustina Wagner</label>
+            </value>
+            <value>
+                <fullName>Carla Gagliardi</fullName>
+                <default>false</default>
+                <label>Carla Gagliardi</label>
+            </value>
+            <value>
+                <fullName>Delfina Ramaglia</fullName>
+                <default>false</default>
+                <label>Delfina Ramaglia</label>
+            </value>
+            <value>
+                <fullName>Esteban Pizzaco</fullName>
+                <default>false</default>
+                <label>Esteban Pizzaco</label>
+            </value>
+            <value>
+                <fullName>Felipe Goyeneche</fullName>
+                <default>false</default>
+                <label>Felipe Goyeneche</label>
+            </value>
+            <value>
+                <fullName>Francisco Corbacho</fullName>
+                <default>false</default>
+                <label>Francisco Corbacho</label>
+            </value>
+            <value>
+                <fullName>Guillermo Rosales</fullName>
+                <default>false</default>
+                <label>Guillermo Rosales</label>
+            </value>
+            <value>
+                <fullName>Ivo Marinich</fullName>
+                <default>false</default>
+                <label>Ivo Marinich</label>
+            </value>
+            <value>
+                <fullName>Josefina Bianco</fullName>
+                <default>false</default>
+                <label>Josefina Bianco</label>
+            </value>
+            <value>
+                <fullName>Lara Acosta</fullName>
+                <default>false</default>
+                <label>Lara Acosta</label>
+            </value>
+            <value>
+                <fullName>Macarena Ghio</fullName>
+                <default>false</default>
+                <label>Macarena Ghio</label>
+            </value>
+            <value>
+                <fullName>Micaela Salas</fullName>
+                <default>false</default>
+                <label>Micaela Salas</label>
+            </value>
+            <value>
+                <fullName>Silvina Torella</fullName>
+                <default>false</default>
+                <label>Silvina Torella</label>
+            </value>
+            <value>
+                <fullName>Vanesa Manes</fullName>
+                <default>false</default>
+                <label>Vanesa Manes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

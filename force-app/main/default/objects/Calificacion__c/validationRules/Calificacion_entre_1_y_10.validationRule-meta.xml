@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calificacion_entre_1_y_10</fullName>
+    <active>true</active>
+    <description>Los campos Primer trimestre, Segundo trimestre y Tercer trimestre deben ser números entre 1 y 10.</description>
+    <errorConditionFormula>Primer_trimestre__c &lt;= 0 || Primer_trimestre__c &gt; 10
+|| Segundo_trimestre__c &lt;= 0 || Segundo_trimestre__c &gt; 10
+|| Tercer_trimestre__c &lt;= 0 || Tercer_trimestre__c &gt; 10</errorConditionFormula>
+    <errorMessage>Las calificaciones deben estar entre 1 y 10.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <formulas>
+        <name>Formula</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Materia__c}+{!$Record.Boletin__c}</expression>
+    </formulas>
+    <interviewLabel>Completar campo Calificacion.Evitar_duplicados {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Completar campo Calificacion.Evitar_duplicados</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Completar_campo_Evitar</name>
+        <label>Completar campo Evitar duplicados</label>
+        <locationX>576</locationX>
+        <locationY>383</locationY>
+        <inputAssignments>
+            <field>Evitar_duplicados__c</field>
+            <value>
+                <elementReference>Formula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>449</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Completar_campo_Evitar</targetReference>
+        </connector>
+        <object>Calificacion__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

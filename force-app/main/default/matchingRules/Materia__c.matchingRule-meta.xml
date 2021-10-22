@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <matchingRules>
+        <fullName>Materias_unicas</fullName>
+        <description>Evita la creación de materias repetidas en el objeto Materias.
+Por ejemplo, sólo puede haber una materia &quot;Matemática&quot;.</description>
+        <label>Materias únicas</label>
+        <matchingRuleItems>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+            <fieldName>Name</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+</MatchingRules>
